@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    
+    <link rel="canonical" href="https://sageprotocol.io/"><link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Introduction - 📜 Sage Litepaper</title>
+
+
+<link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/terminal.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/theme.tile_grid.css" rel="stylesheet">
+<link href="css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="assets/styles.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = ".",
+    shortcuts = "{}";
+</script>
+<script src="js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="js/bootstrap/bootstrap.min.js" defer></script>
+<script src="js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="https://sageprotocol.io/" class="no-style">📜 Sage Litepaper</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="." class="menu-item active" property="item" typeof="WebPage">
+                        <span property="name">Introduction</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Introduction</span>
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Sections</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/01-why-now/">Why Now?</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/02-what-sage-is/">What Sage Is</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/03-what-makes-it-different/">What’s Different</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/04-the-selfimproving-metaprompting-loop/">Metaprompting Loop</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/05-core-components/">Core Components</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/06-incentives-and-ownership/">Incentives & Ownership</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/07-for-communities/">For Communities</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/08-why-base/">Why Base</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/09-security-and-launch-status/">Security & Launch</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/10-token-and-treasury-in-plain-terms/">Token & Treasury</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/11-from-on-chain-to-on-device-the-power-of-the-cli/">On‑Device CLI</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/12-get-started/">Get Started</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/13-roadmap/">Roadmap</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="sections/14-license/">License</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#sage-litepaper">📜 Sage Litepaper</a></li>
+        <li><a href="#the-first-permissionless-protocol-for-incentivized-agent-context-sharing">The first permissionless protocol for incentivized agent context sharing.</a></li><li><a href="#why-now">Why Now?</a></li><li><a href="#what-sage-is">What Sage Is</a></li><li><a href="#what-makes-it-different">What Makes It Different</a></li><li><a href="#the-selfimproving-metaprompting-loop">The Self‑Improving Metaprompting Loop</a></li><li><a href="#core-components">Core Components</a></li><li><a href="#technical-overview">Technical Overview</a></li><li><a href="#incentives-and-ownership">Incentives and Ownership</a></li><li><a href="#governance-modes-simple">Governance Modes (Simple)</a></li><li><a href="#for-communities">For Communities</a></li><li><a href="#why-base">Why Base</a></li><li><a href="#security-and-launch-status">Security and Launch Status</a></li><li><a href="#token-and-treasury-in-plain-terms">Token and Treasury, in Plain Terms</a></li><li><a href="#from-on-chain-to-on-device-the-power-of-the-cli">From On-Chain to On-Device: The Power of the CLI</a></li><li><a href="#get-started">Get Started</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#license">License</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="sage-litepaper">📜 Sage Litepaper</h1>
+<blockquote>
+<h3 id="the-first-permissionless-protocol-for-incentivized-agent-context-sharing">The first permissionless protocol for incentivized agent context sharing.</h3>
+</blockquote>
+<p>Sage turns prompts, libraries, and agent context into shared, ownable, and continuously improving community assets. Builders publish once, communities curate and reward, agents discover and use the best context on-chain and from <strong>IPFS</strong>, and value flows back to the people who made it useful. The result is a decentralized, self‑improving metaprompting system that communities control end to end. Follow the founder <a href="https://x.com/VelinusSage">@VelinusSage</a> for updates.</p>
+<hr />
+<h2 id="why-now">Why Now?</h2>
+<p>AI work moves fast, but community memory is brittle. Great prompts and context live in scattered docs, DMs, and private repos. They decay as models change. There is no portable way for communities to store, version, and improve shared context, and no native path to attribute or reward the people who move the state of the art forward. Sage addresses four blockers:</p>
+<ol>
+<li>
+<p><strong>Lossy Knowledge</strong><br />
+    Context is copied and pasted, not curated. There is no global index or version trail that communities can trust.</p>
+</li>
+<li>
+<p><strong>Prompt Decay</strong><br />
+    Models evolve weekly. Yesterday’s best pattern quietly breaks, and no one sees the diff or the fix land in time. Communities need a place to vote, fork, and ship updates together.</p>
+</li>
+<li>
+<p><strong>Zero Attribution by Default</strong><br />
+    Reuse is the norm, but provenance and revenue share are not. That erodes incentives to publish the good stuff.</p>
+</li>
+<li>
+<p><strong>No Community Treasury Loop</strong><br />
+    Work happens, but there is no clean way to fund curation, pay contributors, and compound gains inside a shared treasury across cycles.</p>
+</li>
+</ol>
+<blockquote>
+<p>Sage exists to make community knowledge durable, discoverable, and rewarded.</p>
+</blockquote>
+<hr />
+<h2 id="what-sage-is">What Sage Is</h2>
+<p>Sage is a protocol that lets communities publish prompt libraries on <strong>IPFS</strong>, register them on-chain, and govern upgrades through their own <strong>SubDAO</strong>. A manifest file defines an entire library, and one proposal updates the whole set. Discoverability runs through a subgraph and an <strong>MCP</strong> server so agents can search and pull context directly. Interfaces include a <strong>CLI</strong>, a web app, and Model Context Protocol (<strong>MCP</strong>) endpoints for agent tooling like Claude Desktop.</p>
+<ul>
+<li><strong>Publish</strong>: Push a manifest and prompt files to <strong>IPFS</strong>. Get immutable CIDs.</li>
+<li><strong>Propose</strong>: Each manifest is one governance proposal in your <strong>SubDAO</strong>. Vote, queue, and execute through a Timelock.</li>
+<li><strong>Discover</strong>: Agents, the <strong>CLI</strong>, and the web app read via subgraph first and fall back to RPC.</li>
+<li><strong>Use</strong>: <strong>MCP</strong> tools return content by CID so agents can load context on demand.</li>
+</ul>
+<p>This approach gives AI artists, prompt engineers, and research groups an easy path to share and store their working prompts with permanence, version history, and clear community ownership.</p>
+<hr />
+<h2 id="what-makes-it-different">What Makes It Different</h2>
+<ul>
+<li>
+<p><strong>Community First</strong><br />
+    Each community has a <strong>SubDAO</strong> with its own library, governance, and treasury. Forks and remixing are explicit, not implicit. Curation happens in public.</p>
+</li>
+<li>
+<p><strong>Manifest‑First Upgrades</strong><br />
+    Ship atomic updates to entire collections. That cuts gas, reduces proposal fatigue, and keeps libraries coherent.</p>
+</li>
+<li>
+<p><strong>Incentives Built-In</strong><br />
+<strong>Boosts</strong> reward participation. <strong>Bounties</strong> pay for new prompts. <strong>Premiums</strong> let creators sell encrypted content with on-chain receipts. Proceeds route to <strong>SubDAO</strong> and protocol treasuries.</p>
+</li>
+<li>
+<p><strong>AI-Assisted Authoring</strong>: A built-in CLI agent helps you write new prompts from scratch. Use <code>sage prompt generate</code> to turn a simple topic into a structured, high-quality prompt file, ready for use and curation.</p>
+</li>
+<li>
+<p><strong>Agent‑Native Discovery</strong><br />
+    An <strong>MCP</strong> server exposes search, fetch, and manifest validation. Agents can query libraries directly, then pull the exact context they need.</p>
+</li>
+<li>
+<p><strong>Production on Base</strong><br />
+    Contracts, subgraph, and flows run on Base Sepolia today, designed to graduate to Base mainnet following a gated launch sequence.</p>
+</li>
+</ul>
+<hr />
+<h2 id="the-selfimproving-metaprompting-loop">The Self‑Improving Metaprompting Loop</h2>
+<ol>
+<li>
+<p><strong>Publish</strong><br />
+    Authors push a library with a human‑readable manifest. <strong>IPFS</strong> CIDs anchor content.</p>
+</li>
+<li>
+<p><strong>Curate</strong><br />
+    The community proposes variants, votes, and executes upgrades. Approver Councils can be badge‑gated for fast tracks when needed.</p>
+</li>
+<li>
+<p><strong>Reward</strong><br />
+<strong>Boosts</strong> pay voters or contributors for specific decisions. <strong>Bounties</strong> fund new prompts. <strong>Premiums</strong> monetize high‑effort work. Treasury routes and override guards are set by governance.</p>
+</li>
+<li>
+<p><strong>Use and Measure</strong><br />
+    Agents fetch context via <strong>MCP</strong>. Communities gauge a prompt's value through on-chain signals like forks, bounty completions, and governance proposals, creating a feedback loop for continuous improvement.</p>
+</li>
+</ol>
+<hr />
+<h2 id="core-components">Core Components</h2>
+<ul>
+<li>
+<p><strong>Smart Contracts on Base</strong><br />
+<strong>SubDAO</strong> Factory, Governor and Timelock, LibraryRegistry, PromptRegistry, Treasury modules, optional <strong>LBP</strong> and <strong>Bonding</strong> integrations.</p>
+</li>
+<li>
+<p><strong>Storage and Discovery</strong><br />
+<strong>IPFS</strong> for payloads, subgraph‑first reads across <strong>CLI</strong>, web, and <strong>MCP</strong>.</p>
+</li>
+<li>
+<p><strong>Tooling</strong><br />
+    A complete <strong>CLI</strong>, a web app for discovery and drafting, and an <strong>MCP</strong> stdio server that plugs into Claude Desktop or an HTTP server for other agents.</p>
+</li>
+</ul>
+<hr />
+<h2 id="technical-overview">Technical Overview</h2>
+<p>At a high level, Sage glues together three things your community already uses:</p>
+<ul>
+<li>On‑chain governance (Governor + Timelock) for trusted upgrades</li>
+<li>IPFS for content and manifests with immutable CIDs</li>
+<li>An index layer (subgraph + MCP) for search and agent access</li>
+</ul>
+<p>Updates are “manifest‑first”: one proposal approves a new manifest CID and atomically updates the entire library. Agents read the subgraph first and fall back to RPC, so they always see the latest approved version.</p>
+<hr />
+<h2 id="incentives-and-ownership">Incentives and Ownership</h2>
+<p>Sage powers three on‑chain incentive rails that communities can combine.</p>
+<h3 id="1-boosts">1. Boosts</h3>
+<p>Parameterizable rewards for governance participation or contributor actions. Two manager contracts exist:</p>
+<ul>
+<li>Direct manager for per‑voter payouts tied to a proposal.</li>
+<li>Merkle manager for pooled funding and claim‑by‑proof.</li>
+</ul>
+<p>Both paths are governed through the <strong>SubDAO</strong> Timelock. The <strong>CLI</strong> supports <code>create</code>, <code>fund</code>, <code>set-root</code>, <code>status</code>, <code>claim</code>, and <code>finalize</code>.</p>
+<h3 id="2-bounties">2. Bounties</h3>
+<p>Announce tasks, award winners, and pay out from the Timelock. This system is event-only by design. Fund the Timelock with ETH or an ERC‑20 before executing payout proposals.</p>
+<h3 id="3-premium-prompts">3. Premium Prompts</h3>
+<p>Encrypt content client-side, pin to <strong>IPFS</strong>, and gate decryption with Lit v7 and ERC‑1155 receipts. Buyers pay in USDC, get a receipt NFT, and decrypt locally with session signatures. Pricing and treasury routing are on‑chain. No reveal server is needed.</p>
+<h3 id="paid-pinning-revenue">Paid Pinning Revenue</h3>
+<p>When libraries are pushed with paid pinning, the service receives USDC and calls on-chain attribution. The default split routes 80% to the <strong>SubDAO</strong> treasury and 20% to the protocol treasury.</p>
+<p>In production, an HTTP‑native payment flow (x402) can collect USDC at request time and attribute proceeds automatically. For communities, this means: pay once to persist content; revenue lands transparently in your treasury.</p>
+<h3 id="sbts-and-badgegated-fast-tracks">SBTs and Badge‑Gated Fast Tracks</h3>
+<p>Non‑transferable <strong>SBTs</strong> recognize contributors and can gate Approver Council permissions to move quickly on scoped updates, with function selectors allow‑listed by governance.</p>
+<hr />
+<h2 id="governance-modes-simple">Governance Modes (Simple)</h2>
+<p>Communities can start simple and evolve their governance shape over time:</p>
+<ul>
+<li>Bootstrap: member list with proposal cooldowns and refundable deposits to prevent spam.</li>
+<li>Token: standard ERC20Votes quorum using SXXX or a SubDAO stake token.</li>
+<li>Operator: trusted multisig or owner executes via Timelock for fast iteration.</li>
+</ul>
+<p>The CLI can plan/apply role changes safely through proposals or Safe transactions.</p>
+<hr />
+<h2 id="for-communities">For Communities</h2>
+<ul>
+<li>
+<p><strong>AI Artists and Prompt Engineers</strong><br />
+    Store prompts permanently with <strong>IPFS</strong> CIDs, track versions, and get discovery out of the box. Add premium entries when you want to sell high‑effort sets.</p>
+</li>
+<li>
+<p><strong>Research Groups and Guilds</strong><br />
+    Use <strong>Bounties</strong> for new methods, <strong>Boosts</strong> for review cycles, and <strong>SBTs</strong> for reputation. Fork libraries when styles or standards diverge.</p>
+</li>
+<li>
+<p><strong>Agent Builders</strong><br />
+    Query the subgraph or <strong>MCP</strong> to pull the latest approved context and keep agents in sync as libraries evolve.</p>
+</li>
+</ul>
+<hr />
+<h2 id="why-base">Why Base</h2>
+<p>Base is where on-chain apps have grown fastest this cycle, with significant TVL and a culture of shipping public goods. Aerodrome has become the liquidity hub for Base, with community emissions and LP tooling that many projects model against. Projects launching on Base often use Fjord’s <strong>LBPs</strong> to align distribution with community discovery. Sage follows these patterns for its treasury and launch readiness.</p>
+<p>In plain terms: Base keeps fees low, is OP‑Stack compatible, and has the most active community for AI‑adjacent projects today. That means cheaper governance, faster experiments, and better discovery for new libraries.</p>
+<hr />
+<h2 id="security-and-launch-status">Security and Launch Status</h2>
+<ul>
+<li>
+<p><strong>Security Model</strong><br />
+    All writes flow through a Governor to a Timelock. Emergency pause, least-privilege roles, and upgrade paths are governance-controlled.</p>
+</li>
+<li>
+<p><strong>Testnet Readiness</strong><br />
+    Fully working end-to-end on Base Sepolia, including library updates, governance, treasury demos, <strong>MCP</strong>, and the app.</p>
+</li>
+<li>
+<p><strong>Mainnet Launch Sequence</strong><br />
+    A phased plan covers MEV risk for initial liquidity, private mempool usage for pool creation, and transaction ordering constraints. Use a multisig and follow the step plan exactly.</p>
+</li>
+</ul>
+<p>Additional commitments drawn from the reference documentation:</p>
+<ul>
+<li><strong>Audits &amp; Reviews</strong>: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.</li>
+<li><strong>Role Boundaries</strong>: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.</li>
+<li><strong>Operational Hygiene</strong>: Default timelock delays, proposal cooldowns, and per‑address caps reduce spam and operational risk during bootstrap.</li>
+</ul>
+<hr />
+<h2 id="token-and-treasury-in-plain-terms">Token and Treasury, in Plain Terms</h2>
+<p>The Sage economy provides three distinct pillars for a self-sustaining ecosystem:</p>
+<ol>
+<li><strong>Treasury Growth:</strong> The protocol's main treasury is funded by a one-time <strong>LBP</strong> launch and ongoing <strong>bond</strong> sales. This ensures the long-term financial health and stability of the <code>SXXX</code> token.</li>
+<li><strong>Creator Rewards:</strong> <strong>SubDAOs</strong> receive grants from the main treasury and use those funds to post <strong>bounties</strong>. This creates a direct, work-to-earn loop for prompt engineers and other contributors.</li>
+<li><strong>Community Governance:</strong> <code>SXXX</code> token holders stake their tokens in <strong>SubDAOs</strong> to vote on content curation and community decisions, ensuring that the most valuable context is promoted and rewarded.</li>
+</ol>
+<p>From the reference tokenomics:</p>
+<ul>
+<li><strong>Fixed Supply</strong>: SXXX targets a fixed 1B supply at genesis with deflationary burns tied to creation/forking where appropriate. No inflation.</li>
+<li><strong>Treasury Bootstrapping</strong>: A public <strong>LBP</strong> plus optional bond sales seed protocol‑owned liquidity and long‑term reserves; SubDAOs may receive grants.</li>
+<li><strong>Coordination over Fees</strong>: Tokens primarily coordinate long‑horizon work (governance, reputation, commitment burns) rather than charging per‑prompt usage.</li>
+</ul>
+<hr />
+<h2 id="from-on-chain-to-on-device-the-power-of-the-cli">From On-Chain to On-Device: The Power of the CLI</h2>
+<p>Beyond governance, the Sage <strong>CLI</strong> is a powerful bridge between the decentralized protocol and local development. It's designed to pull complex, on-chain agent systems directly into your workflow.</p>
+<p>With a single command, you can parse an entire <strong>SubDAO</strong>'s curated library and generate ready-to-use local files:</p>
+<ul>
+<li><strong>For Custom GPTs:</strong> Generate a <code>system-prompt.txt</code> file, perfectly formatted for use in OpenAI's GPT builder.</li>
+<li><strong>For Coding Agents:</strong> Output a series of <code>.js</code> or <code>.py</code> files, where each file contains a specific prompt for a step in your automated coding workflow.</li>
+<li><strong>For AI Art:</strong> Create a JSON file of tested, high-quality prompts formatted for the Midjourney or Stable Diffusion API.</li>
+</ul>
+<p>This transforms decentralized curation into a practical, daily tool for developers and creators.</p>
+<hr />
+<h2 id="get-started">Get Started</h2>
+<p><strong>Connect</strong></p>
+<pre><code class="language-bash">sage wallet connect --type cast
+sage doctor
+</code></pre>
+<p><strong>Publish a library</strong></p>
+<pre><code class="language-bash">sage library scaffold-manifest
+sage library lint manifest.json
+sage library push manifest.json --pin
+sage library propose manifest.json --subdao 0xYourSubDAO
+</code></pre>
+<p><strong>Run the MCP server for agents</strong></p>
+<pre><code class="language-bash">node cli/mcp-server-stdio.js
+# or start HTTP and set NEXT_PUBLIC_MCP_HTTP_URL
+</code></pre>
+<p>Tools include: <code>search_onchain_prompts</code>, <code>get_prompt_content</code>, <code>list_subdaos</code>, <code>get_library_manifests</code>.</p>
+<p><strong>Offer a premium prompt</strong></p>
+<pre><code class="language-bash">sage premium-pre authsig --out ./authSig.json
+sage premium-pre publish --in ./prompt.md --name &quot;Title&quot; --description &quot;Desc&quot; \
+  --subdao 0xYourSubDAO --price 2.50 --auth-sig ./authSig.json
+</code></pre>
+<p><strong>Incentivize participation</strong></p>
+<pre><code class="language-bash"># Direct manager, per-voter
+sage boost create --governor 0xGov --proposal-id 1 --per-voter 250000 --max-voters 100 --min-votes 1
+
+# Merkle pool
+sage boost fund --proposal-id 1 --amount 25000000
+sage boost set-root --manager 0xMerkle --proposal-id 1 --root 0xRoot
+</code></pre>
+<p><strong>Set up SBTs and an Approver Council</strong></p>
+<pre><code class="language-bash">sage sbt propose-mint --to 0xContributor --badge 1 --uri ipfs://CID
+sage council set-config --badge $SBT --badge-id 1 --target $PROMPT_REGISTRY
+sage council allow --selector addForkedPrompt(string,string,string,string,address)
+</code></pre>
+<hr />
+<h2 id="roadmap">Roadmap</h2>
+<ul>
+<li>
+<p>Completed
+    SubDAO factory, Library and Prompt registries, governance flows, <strong>Boosts</strong>, <strong>Premiums</strong>, <strong>SBTs</strong>, <strong>MCP</strong>, <strong>CLI</strong>, and web app are live on Base Sepolia.</p>
+</li>
+<li>
+<p><strong>In Progress</strong>
+    Full testnet launch with airdrop incentives and Discord; <strong>CLI</strong> V2 with meta prompting agent, Fjord partnership, and web app.</p>
+</li>
+<li>
+<p><strong>Mainnet</strong>
+    Execute the launch sequence, wire canonical liquidity, and transition ownership entirely to DAO contracts.</p>
+</li>
+<li>
+<p><strong>Growth</strong>
+    First community libraries in creative AI, research, and agent ops. Grants and <strong>bounties</strong> focused on subjective domains where human curation matters most.</p>
+</li>
+</ul>
+<hr />
+<h2 id="license">License</h2>
+<p>MIT. See the repository for full docs, guides, and examples.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
