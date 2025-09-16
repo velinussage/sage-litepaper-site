@@ -91,7 +91,7 @@ This approach gives AI artists, prompt engineers, and research groups an easy pa
 
 ## Technical Overview
 
-At a high level, Sage glues together three things your community already uses:
+At a high level, Sage brings together three familiar pieces:
 
 -   On‑chain governance (Governor + Timelock) for trusted upgrades
 -   IPFS for content and manifests with immutable CIDs
