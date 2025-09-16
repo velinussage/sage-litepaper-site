@@ -139,7 +139,7 @@ Non‑transferable **SBTs** recognize contributors and can gate Approver Council
 Communities can start simple and evolve their governance shape over time:
 
 -   Bootstrap: member list with proposal cooldowns and refundable deposits to prevent spam.
--   Token: standard ERC20Votes quorum using SXXX or a SubDAO stake token.
+-   Token: standard ERC20Votes quorum using SAGE or a SubDAO stake token.
 -   Operator: trusted multisig or owner executes via Timelock for fast iteration.
 
 The CLI can plan/apply role changes safely through proposals or Safe transactions.
@@ -190,13 +190,11 @@ Additional commitments drawn from the reference documentation:
 
 The Sage economy provides three distinct pillars for a self-sustaining ecosystem:
 
-1.  **Treasury Growth:** The protocol's main treasury is funded by a one-time **LBP** launch and ongoing **bond** sales. This ensures the long-term financial health and stability of the `SXXX` token.
+1.  **Treasury Growth:** The protocol's main treasury is funded by a one-time **LBP** launch and ongoing **bond** sales. This ensures the long-term financial health and stability of the `SAGE` token.
 2.  **Creator Rewards:** **SubDAOs** receive grants from the main treasury and use those funds to post **bounties**. This creates a direct, work-to-earn loop for prompt engineers and other contributors.
-3.  **Community Governance:** `SXXX` token holders stake their tokens in **SubDAOs** to vote on content curation and community decisions, ensuring that the most valuable context is promoted and rewarded.
+3.  **Community Governance:** `SAGE` token holders stake their tokens in **SubDAOs** to vote on content curation and community decisions, ensuring that the most valuable context is promoted and rewarded.
 
-From the reference tokenomics:
-
--   **Fixed Supply**: SXXX targets a fixed 1B supply at genesis with deflationary burns tied to creation/forking where appropriate. No inflation.
+-   **Fixed Supply**: SAGE targets a fixed 1B supply at genesis with deflationary burns tied to creation/forking where appropriate. No inflation.
 -   **Treasury Bootstrapping**: A public **LBP** plus optional bond sales seed protocol‑owned liquidity and long‑term reserves; SubDAOs may receive grants.
 -   **Coordination over Fees**: Tokens primarily coordinate long‑horizon work (governance, reputation, commitment burns) rather than charging per‑prompt usage.
 
