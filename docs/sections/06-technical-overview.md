@@ -1,6 +1,6 @@
 # Technical Overview
 
-At a high level, Sage brings together three familiar pieces:
+At a high level, Sage combines three familiar building blocks:
 
 -   On‑chain governance (Governor + Timelock) for trusted upgrades
 -   IPFS for content and manifests with immutable CIDs
