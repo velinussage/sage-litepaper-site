@@ -418,7 +418,7 @@
 <p>Sage is a protocol for community‑owned prompt libraries. Publish once to <strong>IPFS</strong>, govern upgrades through your SubDAO, and let agents automatically discover the best approved version. As libraries improve, rewards flow back to the people who make them useful. Follow the founder <a href="https://x.com/VelinusSage">@VelinusSage</a> for updates.</p>
 <hr />
 <h2 id="why-now">Why Now?</h2>
-<p>AI moves fast; community memory doesn’t. Prompts and context end up in scattered docs, chats, and private repos. As models change, good patterns go stale. There’s no portable way to store, version, and improve shared context, or to credit and reward the people who advance it. Sage fixes four blockers:</p>
+<p>AI moves fast; community memory doesn’t. Prompts and context end up in scattered docs, chats, and private repos. As models change, good patterns go stale. There’s no portable way to store, version, and improve shared context, or to credit and reward the people who advance it. Sage solves four problems:</p>
 <ol>
 <li>
 <p><strong>No Shared Source of Truth</strong><br />
@@ -426,15 +426,15 @@
 </li>
 <li>
 <p><strong>Prompt Decay</strong><br />
-    Models evolve weekly. Yesterday’s best pattern quietly breaks, and no one sees the diff or the fix land in time. Communities need a place to vote, fork, and ship updates together.</p>
+    Models evolve weekly. Yesterday’s best pattern quietly breaks, and the update doesn’t reach everyone. Communities need a place to vote, fork, and ship updates together.</p>
 </li>
 <li>
 <p><strong>No Attribution by Default</strong><br />
     Reuse happens without provenance or revenue share, so creators aren’t rewarded.</p>
 </li>
 <li>
-<p><strong>Missing Treasury Loop</strong><br />
-    There’s no clean way to fund curation, pay contributors, and compound gains inside a shared treasury across cycles.</p>
+<p><strong>No Sustainable Funding Loop</strong><br />
+    Communities lack an easy way to pool funds, pay contributors, and reinvest wins so improvements compound over time.</p>
 </li>
 </ol>
 <blockquote>
@@ -515,7 +515,7 @@
 </ul>
 <hr />
 <h2 id="technical-overview">Technical Overview</h2>
-<p>At a high level, Sage glues together three things your community already uses:</p>
+<p>At a high level, Sage combines three familiar building blocks:</p>
 <ul>
 <li>On‑chain governance (Governor + Timelock) for trusted upgrades</li>
 <li>IPFS for content and manifests with immutable CIDs</li>
@@ -581,10 +581,9 @@
 <p><strong>Testnet Readiness</strong><br />
     Fully working end-to-end on Base Sepolia, including library updates, governance, treasury demos, <strong>MCP</strong>, and the app.</p>
 </li>
-</ul>
-<p>-</p>
-<ul>
-<li><strong>Audits &amp; Reviews</strong>: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.</li>
+<li>
+<p><strong>Audits &amp; Reviews</strong>: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.</p>
+</li>
 <li><strong>Role Boundaries</strong>: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.</li>
 <li><strong>Operational Hygiene</strong>: Default timelock delays, proposal cooldowns, and per‑address caps reduce spam and operational risk during bootstrap.</li>
 </ul>
