@@ -1,0 +1,32 @@
+site_name: "📜 Sage Litepaper"
+site_url: https://sageprotocol.io
+
+theme:
+  name: terminal
+  logo: assets/scroll.png
+  favicon: assets/scroll.png
+extra_css:
+  - assets/styles.css
+
+nav:
+  - Introduction: index.md
+  - Sections:
+      - Why Now?: sections/01-why-now.md
+      - What Sage Is: sections/02-what-sage-is.md
+      - What’s Different: sections/03-what-makes-it-different.md
+      - Metaprompting Loop: sections/04-the-selfimproving-metaprompting-loop.md
+      - Core Components: sections/05-core-components.md
+      - Incentives & Ownership: sections/06-incentives-and-ownership.md
+      - For Communities: sections/07-for-communities.md
+      - Why Base: sections/08-why-base.md
+      - Security & Launch: sections/09-security-and-launch-status.md
+      - Token & Treasury: sections/10-token-and-treasury-in-plain-terms.md
+      - On‑Device CLI: sections/11-from-on-chain-to-on-device-the-power-of-the-cli.md
+      - Get Started: sections/12-get-started.md
+      - Roadmap: sections/13-roadmap.md
+      - License: sections/14-license.md
+
+extra: {}
+
+plugins:
+  - search

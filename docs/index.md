@@ -2,7 +2,7 @@
 
 > ### The first permissionless protocol for incentivized agent context sharing.
 
-Sage turns prompts, libraries, and agent context into shared, ownable, and continuously improving community assets. Builders publish once, communities curate and reward, agents discover and use the best context on-chain and from **IPFS**, and value flows back to the people who made it useful. The result is a decentralized, self‑improving metaprompting system that communities control end to end.
+Sage turns prompts, libraries, and agent context into shared, ownable, and continuously improving community assets. Builders publish once, communities curate and reward, agents discover and use the best context on-chain and from **IPFS**, and value flows back to the people who made it useful. The result is a decentralized, self‑improving metaprompting system that communities control end to end. Follow the founder [@VelinusSage](https://x.com/VelinusSage) for updates.
 
 ---
 
@@ -89,6 +89,18 @@ This approach gives AI artists, prompt engineers, and research groups an easy pa
 
 ---
 
+## Technical Overview
+
+At a high level, Sage glues together three things your community already uses:
+
+-   On‑chain governance (Governor + Timelock) for trusted upgrades
+-   IPFS for content and manifests with immutable CIDs
+-   An index layer (subgraph + MCP) for search and agent access
+
+Updates are “manifest‑first”: one proposal approves a new manifest CID and atomically updates the entire library. Agents read the subgraph first and fall back to RPC, so they always see the latest approved version.
+
+---
+
 ## Incentives and Ownership
 
 Sage powers three on‑chain incentive rails that communities can combine.
@@ -112,11 +124,25 @@ Encrypt content client-side, pin to **IPFS**, and gate decryption with Lit v7 an
 
 ### Paid Pinning Revenue
 
-When libraries are pushed with paid pinning, the service receives USDC and calls on‑chain attribution. The default split routes 80% to the **SubDAO** treasury and 20% to the protocol treasury.
+When libraries are pushed with paid pinning, the service receives USDC and calls on-chain attribution. The default split routes 80% to the **SubDAO** treasury and 20% to the protocol treasury.
+
+In production, an HTTP‑native payment flow (x402) can collect USDC at request time and attribute proceeds automatically. For communities, this means: pay once to persist content; revenue lands transparently in your treasury.
 
 ### SBTs and Badge‑Gated Fast Tracks
 
 Non‑transferable **SBTs** recognize contributors and can gate Approver Council permissions to move quickly on scoped updates, with function selectors allow‑listed by governance.
+
+---
+
+## Governance Modes (Simple)
+
+Communities can start simple and evolve their governance shape over time:
+
+-   Bootstrap: member list with proposal cooldowns and refundable deposits to prevent spam.
+-   Token: standard ERC20Votes quorum using SXXX or a SubDAO stake token.
+-   Operator: trusted multisig or owner executes via Timelock for fast iteration.
+
+The CLI can plan/apply role changes safely through proposals or Safe transactions.
 
 ---
 
@@ -137,6 +163,8 @@ Non‑transferable **SBTs** recognize contributors and can gate Approver Council
 
 Base is where on-chain apps have grown fastest this cycle, with significant TVL and a culture of shipping public goods. Aerodrome has become the liquidity hub for Base, with community emissions and LP tooling that many projects model against. Projects launching on Base often use Fjord’s **LBPs** to align distribution with community discovery. Sage follows these patterns for its treasury and launch readiness.
 
+In plain terms: Base keeps fees low, is OP‑Stack compatible, and has the most active community for AI‑adjacent projects today. That means cheaper governance, faster experiments, and better discovery for new libraries.
+
 ---
 
 ## Security and Launch Status
@@ -150,6 +178,12 @@ Base is where on-chain apps have grown fastest this cycle, with significant TVL 
 -   **Mainnet Launch Sequence**  
     A phased plan covers MEV risk for initial liquidity, private mempool usage for pool creation, and transaction ordering constraints. Use a multisig and follow the step plan exactly.
 
+Additional commitments drawn from the reference documentation:
+
+-   **Audits & Reviews**: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.
+-   **Role Boundaries**: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.
+-   **Operational Hygiene**: Default timelock delays, proposal cooldowns, and per‑address caps reduce spam and operational risk during bootstrap.
+
 ---
 
 ## Token and Treasury, in Plain Terms
@@ -159,6 +193,12 @@ The Sage economy provides three distinct pillars for a self-sustaining ecosystem
 1.  **Treasury Growth:** The protocol's main treasury is funded by a one-time **LBP** launch and ongoing **bond** sales. This ensures the long-term financial health and stability of the `SXXX` token.
 2.  **Creator Rewards:** **SubDAOs** receive grants from the main treasury and use those funds to post **bounties**. This creates a direct, work-to-earn loop for prompt engineers and other contributors.
 3.  **Community Governance:** `SXXX` token holders stake their tokens in **SubDAOs** to vote on content curation and community decisions, ensuring that the most valuable context is promoted and rewarded.
+
+From the reference tokenomics:
+
+-   **Fixed Supply**: SXXX targets a fixed 1B supply at genesis with deflationary burns tied to creation/forking where appropriate. No inflation.
+-   **Treasury Bootstrapping**: A public **LBP** plus optional bond sales seed protocol‑owned liquidity and long‑term reserves; SubDAOs may receive grants.
+-   **Coordination over Fees**: Tokens primarily coordinate long‑horizon work (governance, reputation, commitment burns) rather than charging per‑prompt usage.
 
 ---
 
@@ -178,9 +218,8 @@ This transforms decentralized curation into a practical, daily tool for develope
 
 ## Get Started
 
-**Install and connect**
+**Connect**
 ```bash
-npm i -g @sage-protocol/cli
 sage wallet connect --type cast
 sage doctor
 ```
@@ -234,11 +273,11 @@ sage council allow --selector addForkedPrompt(string,string,string,string,addres
 
 ## Roadmap
 
-*   **Now**
-    **SubDAO** factory, Library and Prompt registries, governance flows, **Boosts**, **Premiums**, **SBTs**, **MCP**, **CLI**, and web app are live on Base Sepolia.
+*   Completed
+    SubDAO factory, Library and Prompt registries, governance flows, **Boosts**, **Premiums**, **SBTs**, **MCP**, **CLI**, and web app are live on Base Sepolia.
 
 *   **In Progress**
-    Coming soon site, **CLI** V2 with meta prompting agent, Fjord partnership, and web app.
+    Full testnet launch with airdrop incentives and Discord; **CLI** V2 with meta prompting agent, Fjord partnership, and web app.
 
 *   **Mainnet**
     Execute the launch sequence, wire canonical liquidity, and transition ownership entirely to DAO contracts.

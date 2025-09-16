@@ -1,0 +1,56 @@
+/* Worldcoin-inspired clean header + integrated nav */
+
+:root {
+  /* Wider primary sidebar */
+  --md-sidebar-width: 300px;
+  /* Slightly wider reading column */
+  --md-typeset-max-width: 980px;
+}
+
+/* White header with a thin accent bar at the very top */
+.md-header {
+  background: #fff;
+  box-shadow: none;
+  border-top: 3px solid #6A0DAD; /* deep purple accent */
+}
+
+/* Hide site name text to keep just the logo (like Worldcoin) */
+.md-header__title {
+  display: none;
+}
+
+/* Hide search icon to simplify the header (keep plugin functional) */
+.md-header__button[for="__search"],
+.md-search {
+  display: none !important;
+}
+
+/* Make the logo a touch larger */
+.md-logo img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Style the top-right social icon as a pill button with text */
+/* Hide header social area (remove Download button) */
+.md-header .md-social { display: none !important; }
+
+/* Bigger, bolder H1 like Worldcoin */
+.md-typeset h1 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-top: .25rem;
+}
+
+/* Integrate ToC on the left only (no right sidebar) */
+.md-sidebar--secondary {
+  display: none;
+}
+
+/* Hide per-page Table of Contents under the left nav (use generated Sections) */
+#terminal-mkdocs-side-panel nav + hr + nav { display: none; }
+
+/* Hide 'Introduction' in top menu and side menu, keep 'Sections' + Search visible */
+.terminal-menu ul li:first-child { display: none; }
+#terminal-mkdocs-side-panel .terminal-mkdocs-side-nav-items > li:first-child { display: none; }
