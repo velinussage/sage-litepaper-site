@@ -8,7 +8,7 @@ Sage is a protocol for community‑owned prompt libraries. Publish once to **IPF
 
 ## Why Now?
 
-AI moves fast; community memory doesn’t. Prompts and context end up in scattered docs, chats, and private repos. As models change, good patterns go stale. There’s no portable way to store, version, and improve shared context, or to credit and reward the people who advance it. Sage fixes four blockers:
+AI moves fast; community memory doesn’t. Prompts and context end up in scattered docs, chats, and private repos. As models change, good patterns go stale. There’s no portable way to store, version, and improve shared context, or to credit and reward the people who advance it. Sage solves four problems:
 
 1.  **No Shared Source of Truth**  
     Everyone works from copies; there’s no trusted, up‑to‑date version with history.
@@ -174,8 +174,6 @@ In plain terms: Base keeps fees low, is OP‑Stack compatible, and has the most 
 
 -   **Testnet Readiness**  
     Fully working end-to-end on Base Sepolia, including library updates, governance, treasury demos, **MCP**, and the app.
-
--
 
 -   **Audits & Reviews**: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.
 -   **Role Boundaries**: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.
