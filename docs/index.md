@@ -2,7 +2,7 @@
 
 > ### The first permissionless protocol for incentivized agent context sharing.
 
-Sage turns prompts, libraries, and agent context into shared, ownable, and continuously improving community assets. Builders publish once, communities curate and reward, agents discover and use the best context on-chain and from **IPFS**, and value flows back to the people who made it useful. The result is a decentralized, self‑improving metaprompting system that communities control end to end. Follow the founder [@VelinusSage](https://x.com/VelinusSage) for updates.
+Sage is a protocol for community‑owned prompt libraries. Publish once to **IPFS**, govern upgrades through your SubDAO, and let agents automatically discover the best approved version. As libraries improve, rewards flow back to the people who make them useful. Follow the founder [@VelinusSage](https://x.com/VelinusSage) for updates.
 
 ---
 
