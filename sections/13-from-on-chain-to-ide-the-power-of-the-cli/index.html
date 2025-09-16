@@ -9,7 +9,7 @@
      
      
     
-    <link rel="canonical" href="https://sageprotocol.io/sections/11-security-and-launch-status/"><link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+    <link rel="canonical" href="https://sageprotocol.io/sections/13-from-on-chain-to-ide-the-power-of-the-cli/"><link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
 <link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
 <link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
@@ -19,7 +19,7 @@
 
     
  
-<title>Security and Launch Status - 📜 Sage Litepaper</title>
+<title>From On-Chain to IDE: The Power of the CLI - 📜 Sage Litepaper</title>
 
 
 <link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -406,30 +406,21 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#security-and-launch-status">Security and Launch Status</a></li>
+        <li><a href="#from-on-chain-to-ide-the-power-of-the-cli">From On-Chain to IDE: The Power of the CLI</a></li>
         
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="security-and-launch-status">Security and Launch Status</h1>
+    <h1 id="from-on-chain-to-ide-the-power-of-the-cli">From On-Chain to IDE: The Power of the CLI</h1>
+<p>Beyond governance, the Sage <strong>CLI</strong> is a powerful bridge between the decentralized protocol and your local development environment. It's designed to pull complex, on-chain agent systems directly into your workflow and format them for professional IDEs.</p>
+<p>With a single command, <code>sage context pull</code>, you can parse an entire <strong>SubDAO</strong>'s curated library and generate ready-to-use local files for specific editing environments:</p>
 <ul>
-<li>
-<p><strong>Security Model</strong><br />
-    All writes flow through a Governor to a Timelock. Emergency pause, least-privilege roles, and upgrade paths are governance-controlled.</p>
-</li>
-<li>
-<p><strong>Testnet Readiness</strong><br />
-    Fully working end-to-end on Base Sepolia, including library updates, governance, treasury demos, <strong>MCP</strong>, and the app.</p>
-</li>
+<li><strong>For Cursor:</strong> Generate a <code>.cursorrules</code> file, allowing you to reference the entire on-chain library directly within the Cursor IDE.</li>
+<li><strong>For Windsurf:</strong> Generate a <code>.windsurf/context.md</code> file, providing structured context for agentic development in Windsurf.</li>
 </ul>
-<p>-</p>
-<ul>
-<li><strong>Audits &amp; Reviews</strong>: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.</li>
-<li><strong>Role Boundaries</strong>: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.</li>
-<li><strong>Operational Hygiene</strong>: Default timelock delays, proposal cooldowns, and per‑address caps reduce spam and operational risk during bootstrap.</li>
-</ul>
+<p>This makes decentralized curation a practical, daily tool inside your IDE.</p>
 <hr />
 </section>
 
