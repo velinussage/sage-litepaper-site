@@ -14,13 +14,13 @@ AI moves fast; community memory doesn’t. Prompts and context end up in scatter
     Everyone works from copies; there’s no trusted, up‑to‑date version with history.
 
 2.  **Prompt Decay**  
-    Models evolve weekly. Yesterday’s best pattern quietly breaks, and no one sees the diff or the fix land in time. Communities need a place to vote, fork, and ship updates together.
+    Models evolve weekly. Yesterday’s best pattern quietly breaks, and the update doesn’t reach everyone. Communities need a place to vote, fork, and ship updates together.
 
 3.  **No Attribution by Default**  
     Reuse happens without provenance or revenue share, so creators aren’t rewarded.
 
-4.  **Missing Treasury Loop**  
-    There’s no clean way to fund curation, pay contributors, and compound gains inside a shared treasury across cycles.
+4.  **No Sustainable Funding Loop**  
+    Communities lack an easy way to pool funds, pay contributors, and reinvest wins so improvements compound over time.
 
 > Sage exists to make community knowledge durable, discoverable, and rewarded.
 
