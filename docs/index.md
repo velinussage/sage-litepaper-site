@@ -175,10 +175,7 @@ In plain terms: Base keeps fees low, is OP‑Stack compatible, and has the most 
 -   **Testnet Readiness**  
     Fully working end-to-end on Base Sepolia, including library updates, governance, treasury demos, **MCP**, and the app.
 
--   **Mainnet Launch Sequence**  
-    A phased plan covers MEV risk for initial liquidity, private mempool usage for pool creation, and transaction ordering constraints. Use a multisig and follow the step plan exactly.
-
-Additional commitments drawn from the reference documentation:
+-
 
 -   **Audits & Reviews**: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.
 -   **Role Boundaries**: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.
@@ -200,17 +197,16 @@ The Sage economy provides three distinct pillars for a self-sustaining ecosystem
 
 ---
 
-## From On-Chain to On-Device: The Power of the CLI
+## From On-Chain to IDE: The Power of the CLI
 
-Beyond governance, the Sage **CLI** is a powerful bridge between the decentralized protocol and local development. It's designed to pull complex, on-chain agent systems directly into your workflow.
+Beyond governance, the Sage **CLI** is a powerful bridge between the decentralized protocol and your local development environment. It's designed to pull complex, on-chain agent systems directly into your workflow and format them for professional IDEs.
 
-With a single command, you can parse an entire **SubDAO**'s curated library and generate ready-to-use local files:
+With a single command, `sage context pull`, you can parse an entire **SubDAO**'s curated library and generate ready-to-use local files for specific editing environments:
 
--   **For Custom GPTs:** Generate a `system-prompt.txt` file, perfectly formatted for use in OpenAI's GPT builder.
--   **For Coding Agents:** Output a series of `.js` or `.py` files, where each file contains a specific prompt for a step in your automated coding workflow.
--   **For AI Art:** Create a JSON file of tested, high-quality prompts formatted for the Midjourney or Stable Diffusion API.
+-   **For Cursor:** Generate a `.cursorrules` file, allowing you to reference the entire on-chain library directly within the Cursor IDE.
+-   **For Windsurf:** Generate a `.windsurf/context.md` file, providing structured context for agentic development in Windsurf.
 
-This transforms decentralized curation into a practical, daily tool for developers and creators.
+This makes decentralized curation a practical, daily tool inside your IDE.
 
 ---
 

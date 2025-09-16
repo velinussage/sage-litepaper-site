@@ -6,10 +6,7 @@
 -   **Testnet Readiness**  
     Fully working end-to-end on Base Sepolia, including library updates, governance, treasury demos, **MCP**, and the app.
 
--   **Mainnet Launch Sequence**  
-    A phased plan covers MEV risk for initial liquidity, private mempool usage for pool creation, and transaction ordering constraints. Use a multisig and follow the step plan exactly.
-
-Additional commitments drawn from the reference documentation:
+-
 
 -   **Audits & Reviews**: Contracts follow standard OZ Governor/Timelock patterns; external audits and public review precede mainnet.
 -   **Role Boundaries**: Sensitive actions route through the Timelock; council modules can allowlist function selectors for scoped, badge‑gated fast tracks.
