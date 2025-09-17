@@ -1,19 +1,19 @@
 # Why Now?
 
-AI moves fast; community memory doesn’t. Prompts and context end up in scattered docs, chats, and private repos. As models change, good patterns go stale. There’s no portable way to store, version, and improve shared context, or to credit and reward the people who advance it. Sage solves four problems:
+AI models evolve weekly; agent instructions rarely keep pace. Agent instructions and prompt libraries are still scattered across chats, docs, and private repos. As models shift, even well-tested agent instructions drift out of sync, and communities lose the ability to coordinate their agent fleets. Sage focuses on four persistent gaps:
 
-1.  **No Shared Source of Truth**  
-    Everyone works from copies; there’s no trusted, up‑to‑date version with history.
+1.  **No Shared Memory for Agents**  
+    Everyone forks ad hoc copies of their agent instructions; there’s no governed, tamper-evident version that humans and agents can trust together.
 
-2.  **Prompt Decay**  
-    Models evolve weekly. Yesterday’s best pattern quietly breaks, and the update doesn’t reach everyone. Communities need a place to vote, fork, and ship updates together.
+2.  **Static Instructions Fall Behind**  
+    Markets, models, and tooling evolve weekly. Yesterday’s prompts quietly break, and orchestration stalls without a governed path to ship updates.
 
-3.  **No Attribution by Default**  
-    Reuse happens without provenance or revenue share, so creators aren’t rewarded.
+3.  **Contributors Lose Attribution**  
+    Reuse happens without provenance or revenue share, so the people training the network rarely see upside.
 
-4.  **No Sustainable Funding Loop**  
-    Communities lack an easy way to pool funds, pay contributors, and reinvest wins so improvements compound over time.
+4.  **No Compounding Incentive Loop**  
+    Communities lack a transparent way to pool funds, reward experiments, and reinvest the learnings- so the collective intelligence plateaus.
 
-> Sage exists to make community knowledge durable, discoverable, and rewarded.
+> Sage exists to turn community knowledge into governed, composable intelligence that compounds.
 
 ---

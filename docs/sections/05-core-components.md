@@ -1,12 +1,12 @@
 # Core Components
 
--   **Smart Contracts on Base**  
-    **SubDAO** Factory, Governor and Timelock, LibraryRegistry, PromptRegistry, Treasury modules, optional **LBP** and **Bonding** integrations.
+-   **On-chain Governance**  
+    **SubDAO** Factory, Governor + Timelock, LibraryRegistry, PromptRegistry, and Treasury modules provide the guardrails for how agent instructions evolve- plus optional **LBP** and **Bonding** integrations for liquidity.
 
--   **Storage and Discovery**  
-    **IPFS** for payloads, subgraph‑first reads across **CLI**, web, and **MCP**.
+-   **Persistent Shared Memory**  
+    **IPFS** stores payloads, while subgraph-first reads keep the **CLI**, web app, and **MCP** endpoints aligned on the latest approved manifest.
 
--   **Tooling**  
-    A complete **CLI**, a web app for discovery and drafting, and an **MCP** stdio server that plugs into Claude Desktop or an HTTP server for other agents.
+-   **Tooling for Distributed Intelligence**  
+    A full **CLI**, a discovery app, and an **MCP** stdio server (with HTTP mode) connect human editors and automated agents to the same governed knowledge base, orchestrating metaprompting sessions along the way.
 
 ---

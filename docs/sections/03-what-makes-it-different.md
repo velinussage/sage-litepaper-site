@@ -1,20 +1,21 @@
 # What Makes It Different
 
--   **Community First**  
-    Each community has a **SubDAO** with its own library, governance, and treasury. Forks and remixing are explicit, not implicit. Curation happens in public.
+-   **Community-Governed Intelligence**  
+    Each community spins up a **SubDAO** with its own library, treasury, and upgrade cadence. Forks, remixes, and attribution happen in the open, so distributed intelligence stays transparent and aligned.
 
--   **Manifest‑First Upgrades**  
-    Ship atomic updates to entire collections. That cuts gas, reduces proposal fatigue, and keeps libraries coherent.
+-   **Manifest-First Upgrades**  
+    Ship atomic updates to the entire library in one proposal. Governance encodes the bounds, agents inherit the updated instructions, and everyone moves together.
 
--   **Incentives Built-In**  
-    **Boosts** reward participation. **Bounties** pay for new prompts. **Premiums** let creators sell encrypted content with on-chain receipts. Proceeds route to **SubDAO** and protocol treasuries.
+-   **Incentives for Learning**  
+    **Boosts**, **Bounties**, and **Premiums** route value to the contributors training the network. Treasuries become self-improving capital that compounds as the distributed intelligence gets better.
 
--   **AI-Assisted Authoring**: A built-in CLI agent helps you write new prompts from scratch. Use `sage prompt generate` to turn a simple topic into a structured, high-quality prompt file, ready for use and curation.
+-   **Metaprompting Co-Pilot**  
+    The CLI guides contributors through system-driven metaprompting, tapping distributed intelligence to surface reusable instructions. Use `sage prompt generate` to turn a simple idea into a structured asset ready for review.
 
--   **Agent‑Native Discovery**  
-    An **MCP** server exposes search, fetch, and manifest validation. Agents can query libraries directly, then pull the exact context they need.
+-   **Agent-Native Discovery**  
+    The **MCP** server exposes search, fetch, and manifest validation. Agents query Sage like an API, retrieve the approved context, and execute without brittle middleware.
 
--   **Production on Base**  
-    Contracts, subgraph, and flows run on Base Sepolia today, designed to graduate to Base mainnet following a gated launch sequence.
+-   **Production-Ready on Base**  
+    Contracts, subgraph, and flows run on Base Sepolia today, with a gated path to Base mainnet so communities can scale in a credibly neutral environment.
 
 ---
