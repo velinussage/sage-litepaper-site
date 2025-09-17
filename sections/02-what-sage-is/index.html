@@ -408,14 +408,14 @@
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <h1 id="what-sage-is">What Sage Is</h1>
-<p>Sage is a protocol that lets communities publish prompt libraries on <strong>IPFS</strong>, register them on-chain, and govern upgrades through their own <strong>SubDAO</strong>. A manifest file defines an entire library, and one proposal updates the whole set. Discoverability runs through a subgraph and an <strong>MCP</strong> server so agents can search and pull context directly. Interfaces include a <strong>CLI</strong>, a web app, and Model Context Protocol (<strong>MCP</strong>) endpoints for agent tooling like Claude Desktop.</p>
+<p>Sage is a governance layer for distributed intelligence, turning community prompt libraries into coordinated agent instructions. Publish once to <strong>IPFS</strong>, register the library on-chain, and let your <strong>SubDAO</strong> steer how agents pull, trust, and evolve that context. A manifest defines the full collection of prompts, and a single proposal upgrades the whole set. Discoverability runs through a subgraph and an <strong>MCP</strong> server so agents can search and synchronize without manual glue code. Interfaces include a <strong>CLI</strong>, a web app, and Model Context Protocol (<strong>MCP</strong>) endpoints for agent tooling like Claude Desktop.</p>
 <ul>
-<li><strong>Publish</strong>: Push a manifest and prompt files to <strong>IPFS</strong>. Get immutable CIDs.</li>
+<li><strong>Publish</strong>: Push manifests and prompt files to <strong>IPFS</strong>. Immutable CIDs establish the authorized set of agent instructions.</li>
 <li><strong>Propose</strong>: Each manifest is one governance proposal in your <strong>SubDAO</strong>. Vote, queue, and execute through a Timelock.</li>
-<li><strong>Discover</strong>: Agents, the <strong>CLI</strong>, and the web app read via subgraph first and fall back to RPC.</li>
-<li><strong>Use</strong>: <strong>MCP</strong> tools return content by CID so agents can load context on demand.</li>
+<li><strong>Discover</strong>: Agents, the <strong>CLI</strong>, and the web app read via subgraph first and fall back to RPC for a consistent view.</li>
+<li><strong>Use</strong>: <strong>MCP</strong> tools return content by CID so agents can orchestrate tasks with the community-approved version.</li>
 </ul>
-<p>This approach gives AI artists, prompt engineers, and research groups an easy path to share and store their working prompts with permanence, version history, and clear community ownership.</p>
+<p>This approach turns simple prompt libraries into governed, self-improving agent instructions for communities of AI artists, prompt engineers, and research collectives so they can coordinate agent behavior with clear ownership.</p>
 <hr />
 </section>
 

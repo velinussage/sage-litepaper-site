@@ -405,7 +405,7 @@
 <nav>
     <ul>
         <li><a href="#sage-litepaper">📜 Sage Litepaper</a></li>
-        <li><a href="#the-first-permissionless-protocol-for-incentivized-agent-context-sharing">The first permissionless protocol for incentivized agent context sharing.</a></li><li><a href="#why-now">Why Now?</a></li><li><a href="#what-sage-is">What Sage Is</a></li><li><a href="#what-makes-it-different">What Makes It Different</a></li><li><a href="#the-selfimproving-metaprompting-loop">The Self‑Improving Metaprompting Loop</a></li><li><a href="#core-components">Core Components</a></li><li><a href="#technical-overview">Technical Overview</a></li><li><a href="#incentives-and-ownership">Incentives and Ownership</a></li><li><a href="#governance-modes-simple">Governance Modes (Simple)</a></li><li><a href="#for-communities">For Communities</a></li><li><a href="#why-base">Why Base</a></li><li><a href="#security-and-launch-status">Security and Launch Status</a></li><li><a href="#token-and-treasury-in-plain-terms">Token and Treasury, in Plain Terms</a></li><li><a href="#from-on-chain-to-ide-the-power-of-the-cli">From On-Chain to IDE: The Power of the CLI</a></li><li><a href="#get-started">Get Started</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#license">License</a></li>
+        <li><a href="#the-first-permissionless-protocol-for-incentivized-agent-context-sharing">The first permissionless protocol for incentivized agent context sharing.</a></li><li><a href="#why-now">Why Now?</a></li><li><a href="#what-sage-is">What Sage Is</a></li><li><a href="#what-makes-it-different">What Makes It Different</a></li><li><a href="#the-self-improving-metaprompting-loop">The Self-Improving Metaprompting Loop</a></li><li><a href="#core-components">Core Components</a></li><li><a href="#technical-overview">Technical Overview</a></li><li><a href="#incentives-and-ownership">Incentives and Ownership</a></li><li><a href="#governance-modes-simple">Governance Modes (Simple)</a></li><li><a href="#for-communities">For Communities</a></li><li><a href="#why-base">Why Base</a></li><li><a href="#security-and-launch-status">Security and Launch Status</a></li><li><a href="#token-and-treasury-in-plain-terms">Token and Treasury, in Plain Terms</a></li><li><a href="#metaprompting-cli">Metaprompting CLI</a></li><li><a href="#get-started">Get Started</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#license">License</a></li>
     </ul>
 </nav>
 </aside>
@@ -415,102 +415,103 @@
 <blockquote>
 <h3 id="the-first-permissionless-protocol-for-incentivized-agent-context-sharing">The first permissionless protocol for incentivized agent context sharing.</h3>
 </blockquote>
-<p>Sage is a protocol for community‑owned prompt libraries. Publish once to <strong>IPFS</strong>, govern upgrades through your SubDAO, and let agents automatically discover the best approved version. As libraries improve, rewards flow back to the people who make them useful. Follow the founder <a href="https://x.com/VelinusSage">@VelinusSage</a> for updates.</p>
+<p>Sage is a governance-powered protocol for community-owned agent instructions. Publish once to <strong>IPFS</strong>, let your <strong>SubDAO</strong> steward upgrades, and let agents automatically discover the trusted version. As the network's distributed intelligence improves, rewards route back to the people training it. Follow the founder <a href="https://x.com/VelinusSage">@VelinusSage</a> for updates.</p>
 <hr />
 <h2 id="why-now">Why Now?</h2>
-<p>AI moves fast; community memory doesn’t. Prompts and context end up in scattered docs, chats, and private repos. As models change, good patterns go stale. There’s no portable way to store, version, and improve shared context, or to credit and reward the people who advance it. Sage solves four problems:</p>
+<p>AI models evolve weekly; agent instructions rarely keep pace. Agent instructions and prompt libraries are still scattered across chats, docs, and private repos. As models shift, even well-tested agent instructions drift out of sync, and communities lose the ability to coordinate their agent fleets. Sage focuses on four persistent gaps:</p>
 <ol>
 <li>
-<p><strong>No Shared Source of Truth</strong><br />
-    Everyone works from copies; there’s no trusted, up‑to‑date version with history.</p>
+<p><strong>No Shared Memory for Agents</strong><br />
+    Everyone forks ad hoc copies of their agent instructions; there’s no governed, tamper-evident version that humans and agents can trust together.</p>
 </li>
 <li>
-<p><strong>Prompt Decay</strong><br />
-    Models evolve weekly. Yesterday’s best pattern quietly breaks, and the update doesn’t reach everyone. Communities need a place to vote, fork, and ship updates together.</p>
+<p><strong>Static Instructions Fall Behind</strong><br />
+    Markets, models, and tooling evolve weekly. Yesterday’s prompts quietly break, and orchestration stalls without a governed path to ship updates.</p>
 </li>
 <li>
-<p><strong>No Attribution by Default</strong><br />
-    Reuse happens without provenance or revenue share, so creators aren’t rewarded.</p>
+<p><strong>Contributors Lose Attribution</strong><br />
+    Reuse happens without provenance or revenue share, so the people training the network rarely see upside.</p>
 </li>
 <li>
-<p><strong>No Sustainable Funding Loop</strong><br />
-    Communities lack an easy way to pool funds, pay contributors, and reinvest wins so improvements compound over time.</p>
+<p><strong>No Compounding Incentive Loop</strong><br />
+    Communities lack a transparent way to pool funds, reward experiments, and reinvest the learnings so the collective intelligence plateaus.</p>
 </li>
 </ol>
 <blockquote>
-<p>Sage exists to make community knowledge durable, discoverable, and rewarded.</p>
+<p>Sage exists to turn community knowledge into governed, composable intelligence that compounds.</p>
 </blockquote>
 <hr />
 <h2 id="what-sage-is">What Sage Is</h2>
-<p>Sage is a protocol that lets communities publish prompt libraries on <strong>IPFS</strong>, register them on-chain, and govern upgrades through their own <strong>SubDAO</strong>. A manifest file defines an entire library, and one proposal updates the whole set. Discoverability runs through a subgraph and an <strong>MCP</strong> server so agents can search and pull context directly. Interfaces include a <strong>CLI</strong>, a web app, and Model Context Protocol (<strong>MCP</strong>) endpoints for agent tooling like Claude Desktop.</p>
+<p>Sage is a governance layer for distributed intelligence, turning community prompt libraries into coordinated agent instructions. Publish once to <strong>IPFS</strong>, register the library on-chain, and let your <strong>SubDAO</strong> steer how agents pull, trust, and evolve that context. A manifest defines the full collection of prompts, and a single proposal upgrades the whole set. Discovery runs through a subgraph and an <strong>MCP</strong> server so agents can search and synchronize without manual glue code. Interfaces include a <strong>CLI</strong>, a web app, and Model Context Protocol (<strong>MCP</strong>) endpoints for agent tooling like Claude Desktop.</p>
 <ul>
-<li><strong>Publish</strong>: Push a manifest and prompt files to <strong>IPFS</strong>. Get immutable CIDs.</li>
+<li><strong>Publish</strong>: Push manifests and prompt files to <strong>IPFS</strong>. Immutable CIDs establish the authorized set of agent instructions.</li>
 <li><strong>Propose</strong>: Each manifest is one governance proposal in your <strong>SubDAO</strong>. Vote, queue, and execute through a Timelock.</li>
-<li><strong>Discover</strong>: Agents, the <strong>CLI</strong>, and the web app read via subgraph first and fall back to RPC.</li>
-<li><strong>Use</strong>: <strong>MCP</strong> tools return content by CID so agents can load context on demand.</li>
+<li><strong>Discover</strong>: Agents, the <strong>CLI</strong>, and the web app read via subgraph first and fall back to RPC for a consistent view.</li>
+<li><strong>Use</strong>: <strong>MCP</strong> tools return content by CID so agents can orchestrate tasks with the community-approved version.</li>
 </ul>
-<p>This approach gives AI artists, prompt engineers, and research groups an easy path to share and store their working prompts with permanence, version history, and clear community ownership.</p>
+<p>This approach turns simple prompt libraries into governed, self-improving agent instructions for communities of AI artists, prompt engineers, and research collectives so they can coordinate agent behavior with clear ownership.</p>
 <hr />
 <h2 id="what-makes-it-different">What Makes It Different</h2>
 <ul>
 <li>
-<p><strong>Community First</strong><br />
-    Each community has a <strong>SubDAO</strong> with its own library, governance, and treasury. Forks and remixing are explicit, not implicit. Curation happens in public.</p>
+<p><strong>Community-Governed Intelligence</strong><br />
+    Each community spins up a <strong>SubDAO</strong> with its own library, treasury, and upgrade cadence. Forks, remixes, and attribution happen in the open, so distributed intelligence stays transparent and aligned.</p>
 </li>
 <li>
-<p><strong>Manifest‑First Upgrades</strong><br />
-    Ship atomic updates to entire collections. That cuts gas, reduces proposal fatigue, and keeps libraries coherent.</p>
+<p><strong>Manifest-First Upgrades</strong><br />
+    Ship atomic updates to the entire library in one proposal. Governance encodes the bounds, agents inherit the updated instructions, and everyone moves together.</p>
 </li>
 <li>
-<p><strong>Incentives Built-In</strong><br />
-<strong>Boosts</strong> reward participation. <strong>Bounties</strong> pay for new prompts. <strong>Premiums</strong> let creators sell encrypted content with on-chain receipts. Proceeds route to <strong>SubDAO</strong> and protocol treasuries.</p>
+<p><strong>Incentives for Learning</strong><br />
+<strong>Boosts</strong>, <strong>Bounties</strong>, and <strong>Premiums</strong> route value to the contributors training the network. Treasuries become self-improving capital that compounds as the distributed intelligence gets better.</p>
 </li>
 <li>
-<p><strong>AI-Assisted Authoring</strong>: A built-in CLI agent helps you write new prompts from scratch. Use <code>sage prompt generate</code> to turn a simple topic into a structured, high-quality prompt file, ready for use and curation.</p>
+<p><strong>Metaprompting Co-Pilot</strong><br />
+    The CLI guides contributors through system-driven metaprompting, tapping distributed intelligence to surface reusable instructions. Use <code>sage prompt generate</code> to turn a simple idea into a structured asset ready for review.</p>
 </li>
 <li>
-<p><strong>Agent‑Native Discovery</strong><br />
-    An <strong>MCP</strong> server exposes search, fetch, and manifest validation. Agents can query libraries directly, then pull the exact context they need.</p>
+<p><strong>Agent-Native Discovery</strong><br />
+    The <strong>MCP</strong> server exposes search, fetch, and manifest validation. Agents query Sage like an API, retrieve the approved context, and execute without brittle middleware.</p>
 </li>
 <li>
-<p><strong>Production on Base</strong><br />
-    Contracts, subgraph, and flows run on Base Sepolia today, designed to graduate to Base mainnet following a gated launch sequence.</p>
+<p><strong>Production-Ready on Base</strong><br />
+    Contracts, subgraph, and flows run on Base Sepolia today, with a gated path to Base mainnet so communities can scale in a credibly neutral environment.</p>
 </li>
 </ul>
 <hr />
-<h2 id="the-selfimproving-metaprompting-loop">The Self‑Improving Metaprompting Loop</h2>
+<h2 id="the-self-improving-metaprompting-loop">The Self-Improving Metaprompting Loop</h2>
 <ol>
 <li>
 <p><strong>Publish</strong><br />
-    Authors push a library with a human‑readable manifest. <strong>IPFS</strong> CIDs anchor content.</p>
+    Authors codify collective knowledge into human-readable manifests. <strong>IPFS</strong> CIDs anchor the canonical version for humans and agents alike.</p>
 </li>
 <li>
 <p><strong>Curate</strong><br />
-    The community proposes variants, votes, and executes upgrades. Approver Councils can be badge‑gated for fast tracks when needed.</p>
+    The community proposes variants, votes, and executes upgrades on-chain. Approver Councils can be badge-gated to fast-track scoped changes while governance stays in charge.</p>
 </li>
 <li>
 <p><strong>Reward</strong><br />
-<strong>Boosts</strong> pay voters or contributors for specific decisions. <strong>Bounties</strong> fund new prompts. <strong>Premiums</strong> monetize high‑effort work. Treasury routes and override guards are set by governance.</p>
+<strong>Boosts</strong> pay voters or contributors for high-signal interventions. <strong>Bounties</strong> fund targeted experiments. <strong>Premiums</strong> monetize specialized instructions. Treasury routes and guardrails stay programmable through governance.</p>
 </li>
 <li>
 <p><strong>Use and Measure</strong><br />
-    Agents fetch context via <strong>MCP</strong>. Communities gauge a prompt's value through on-chain signals like forks, bounty completions, and governance proposals, creating a feedback loop for continuous improvement.</p>
+    Agents fetch context via <strong>MCP</strong>, execute within approved bounds, and feed results back through on-chain signals like forks, bounty completions, and proposal outcomes that close the learning loop.</p>
 </li>
 </ol>
 <hr />
 <h2 id="core-components">Core Components</h2>
 <ul>
 <li>
-<p><strong>Smart Contracts on Base</strong><br />
-<strong>SubDAO</strong> Factory, Governor and Timelock, LibraryRegistry, PromptRegistry, Treasury modules, optional <strong>LBP</strong> and <strong>Bonding</strong> integrations.</p>
+<p><strong>On-chain Governance</strong><br />
+<strong>SubDAO</strong> Factory, Governor + Timelock, LibraryRegistry, PromptRegistry, and Treasury modules provide the guardrails for how agent instructions evolve, plus optional <strong>LBP</strong> and <strong>Bonding</strong> integrations for liquidity.</p>
 </li>
 <li>
-<p><strong>Storage and Discovery</strong><br />
-<strong>IPFS</strong> for payloads, subgraph‑first reads across <strong>CLI</strong>, web, and <strong>MCP</strong>.</p>
+<p><strong>Persistent Shared Memory</strong><br />
+<strong>IPFS</strong> stores payloads, while subgraph-first reads keep the <strong>CLI</strong>, web app, and <strong>MCP</strong> endpoints aligned on the latest approved manifest.</p>
 </li>
 <li>
-<p><strong>Tooling</strong><br />
-    A complete <strong>CLI</strong>, a web app for discovery and drafting, and an <strong>MCP</strong> stdio server that plugs into Claude Desktop or an HTTP server for other agents.</p>
+<p><strong>Tooling for Distributed Intelligence</strong><br />
+    A full <strong>CLI</strong>, a discovery app, and an <strong>MCP</strong> stdio server (with HTTP mode) connect human editors and automated agents to the same governed knowledge base, orchestrating metaprompting sessions along the way.</p>
 </li>
 </ul>
 <hr />
@@ -555,7 +556,7 @@
 <ul>
 <li>
 <p><strong>AI Artists and Prompt Engineers</strong><br />
-    Store prompts permanently with <strong>IPFS</strong> CIDs, track versions, and get discovery out of the box. Add premium entries when you want to sell high‑effort sets.</p>
+    Store instructions permanently with <strong>IPFS</strong> CIDs, track versions, and get discovery out of the box. Add premium entries when you want to offer high-effort sets.</p>
 </li>
 <li>
 <p><strong>Research Groups and Guilds</strong><br />
@@ -598,14 +599,14 @@
 <li><strong>Coordination over Fees</strong>: Tokens primarily coordinate long‑horizon work (governance, reputation, commitment burns) rather than charging per‑prompt usage.</li>
 </ul>
 <hr />
-<h2 id="from-on-chain-to-ide-the-power-of-the-cli">From On-Chain to IDE: The Power of the CLI</h2>
-<p>Beyond governance, the Sage <strong>CLI</strong> is a powerful bridge between the decentralized protocol and your local development environment. It's designed to pull complex, on-chain agent systems directly into your workflow and format them for professional IDEs.</p>
-<p>With a single command, <code>sage context pull</code>, you can parse an entire <strong>SubDAO</strong>'s curated library and generate ready-to-use local files for specific editing environments:</p>
+<h2 id="metaprompting-cli">Metaprompting CLI</h2>
+<p>The Sage <strong>CLI</strong> guides contributors through system-driven metaprompting sessions, pulling from distributed intelligence to suggest reusable agent instructions and formatting them for everyday tools.</p>
 <ul>
-<li><strong>For Cursor:</strong> Generate a <code>.cursorrules</code> file, allowing you to reference the entire on-chain library directly within the Cursor IDE.</li>
-<li><strong>For Windsurf:</strong> Generate a <code>.windsurf/context.md</code> file, providing structured context for agentic development in Windsurf.</li>
+<li><strong>Discover</strong>: <code>sage context pull</code> syncs the latest approved libraries into Cursor, Windsurf, or plain Markdown so people and agents share the same context.</li>
+<li><strong>Iterate</strong>: <code>sage prompt generate</code> and companion commands propose updated instructions that the network can reuse and iterate on.</li>
+<li><strong>Ship</strong>: Validate manifests locally, pin to <strong>IPFS</strong>, and open governance proposals without leaving the terminal.</li>
 </ul>
-<p>This makes decentralized curation a practical, daily tool inside your IDE.</p>
+<p>This keeps the governance loop fast while letting the network learn from each metaprompting cycle.</p>
 <hr />
 <h2 id="get-started">Get Started</h2>
 <p><strong>Connect</strong></p>
